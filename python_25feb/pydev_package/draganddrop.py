@@ -10,7 +10,7 @@ driver.implicitly_wait(10)
 
 driver.get("https://chercher.tech/practice/practice-pop-ups-selenium-webdriver");
         # find the element
-menu = driver.find_element_by_id("sub-menu")
+menu = driver.find_element_by_id("sub-menu1")
 google_link=driver.find_element_by_id("link2")
         #Create the object for Action Chains
 actions = ActionChains(driver)
