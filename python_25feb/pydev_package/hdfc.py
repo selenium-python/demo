@@ -1,0 +1,20 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+
+ 
+driver=webdriver.Chrome("C:\Chrome driver\chromedriver.exe")
+driver.get("https://netbanking.hdfcbank.com/netbanking/")
+driver.maximize_window()
+driver.switch_to_frame("login_page")
+'''driver.find_element_by_xpath("//input[@class='input_password']").send_keys("12345678")
+'''
+driver.find_element_by_name("fldLoginUserId").send_keys("12345678")
+driver.switch_to_default_content()
+driver.switch_to_frame(1)
+driver.find_element_by_link_text("Privacy Policy").click()
+
+
+
+
+

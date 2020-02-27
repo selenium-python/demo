@@ -1,0 +1,8 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+print ("hello python")
+driver=webdriver.Chrome("C:\Chrome driver\chromedriver.exe")
+driver.get("https://www.google.com/")
+driver.find_element_by_name("q").send_keys("selenium")
+driver.find_element_by_name("btnK").click()
